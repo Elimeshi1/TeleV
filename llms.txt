@@ -14,6 +14,7 @@ Key facts:
 - Privacy: TeleV connects the TV directly to Telegram; it has no analytics or ads and doesn't collect personal data.
 - Languages: English and Hebrew; more languages are planned.
 - Support: support@telev.app
+- Updates channel on Telegram: https://t.me/telev (@telev)
 
 ## Guides
 
