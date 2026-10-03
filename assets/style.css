@@ -75,8 +75,8 @@ a:hover { color: #7cc9ff; }
   transition: transform .15s ease, background .15s ease;
 }
 .btn:hover { transform: translateY(-1px); }
-.btn-primary { background: var(--brand); color: #fff; box-shadow: 0 8px 30px rgba(5, 151, 251, .35); }
-.btn-primary:hover { background: #1aa3ff; color: #fff; }
+.btn-primary { background: #0072c9; color: #fff; box-shadow: 0 8px 30px rgba(5, 151, 251, .35); }
+.btn-primary:hover { background: #0066b8; color: #fff; }
 .btn-ghost { border: 1px solid var(--border); color: var(--text); }
 .btn-ghost:hover { background: var(--surface); color: var(--text); }
 .btn svg { width: 22px; height: 22px; flex: none; }
@@ -141,7 +141,7 @@ section { padding: 64px 0; }
   counter-increment: step; content: counter(step);
   position: absolute; top: 20px; inset-inline-start: 24px;
   width: 30px; height: 30px; border-radius: 50%;
-  background: var(--brand); color: #fff; font-weight: 700;
+  background: #0072c9; color: #fff; font-weight: 700;
   display: grid; place-items: center; font-size: 15px;
 }
 
@@ -205,3 +205,23 @@ section { padding: 64px 0; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* Skip link: hidden until focused with the keyboard */
+.skip-link {
+  position: absolute; top: -100px; inset-inline-start: 16px; z-index: 100;
+  background: #0072c9; color: #fff; padding: 10px 16px;
+  border-radius: 0 0 10px 10px; font-weight: 600; text-decoration: none;
+}
+.skip-link:focus { top: 0; color: #fff; }
+
+/* Legal pages */
+.legal h2 { scroll-margin-top: 80px; }
+.legal h3 { font-size: 18px; }
+
+/* Tables (licenses) */
+.table-wrap { overflow-x: auto; margin: 18px 0; border: 1px solid var(--border); border-radius: 12px; }
+.article table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.article th, .article td { padding: 10px 14px; text-align: start; vertical-align: top; border-bottom: 1px solid var(--border); }
+.article th { background: var(--surface); font-weight: 600; }
+.article tr:last-child td { border-bottom: 0; }
+.article code { background: var(--surface); border-radius: 6px; padding: 1px 6px; font-size: .92em; }
