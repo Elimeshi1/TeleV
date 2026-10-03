@@ -1,0 +1,28 @@
+# TeleV
+
+> TeleV is a free Telegram app for Android TV and Google TV. It shows the videos and live streams from a user's Telegram channels, groups and chats on the TV, with full remote control (D-pad) navigation. Telegram has no official Android TV app; TeleV is an independent, unofficial app built on TDLib, Telegram's official open-source library.
+
+Key facts:
+
+- Platform: Android TV and Google TV, Android 8.0 or newer. Available on Google Play: https://play.google.com/store/apps/details?id=com.telev.tv
+- Price: free.
+- Supported devices: Chromecast with Google TV, Google TV Streamer, Nvidia Shield TV, Xiaomi Mi Box, and Sony, TCL, Hisense and Philips Android TV / Google TV smart TVs.
+- Not supported: Samsung (Tizen), LG (webOS), Amazon Fire TV, Roku, Apple TV. On those TVs, a Chromecast with Google TV adds TeleV.
+- Sign-in: scan a QR code with the Telegram phone app (Settings → Devices → Link Desktop Device), or use a phone number. Two-step verification is supported.
+- Features: video playback from channels, groups and chats; live streams and video chats in real time with switching between active streams; continue watching; playback speed; favorite channels; search public channels; archived chats.
+- Viewer only: TeleV can't send messages and never uses the microphone or camera.
+- Privacy: TeleV connects the TV directly to Telegram; it has no analytics or ads and doesn't collect personal data.
+- Languages: English and Hebrew; more languages are planned.
+- Support: support@telev.app
+
+## Guides
+
+- [How to watch Telegram on TV](https://telev.app/guide/watch-telegram-on-tv/): step-by-step installation and sign-in on Android TV and Google TV
+- [How to watch Telegram live streams on TV](https://telev.app/guide/telegram-live-streams-on-tv/): watching live broadcasts and video chats
+- [Which TVs can run Telegram](https://telev.app/devices/): supported and unsupported devices
+
+## Legal
+
+- [Privacy Policy](https://telev.app/privacy/)
+- [Terms of Use](https://telev.app/terms/)
+- [Data Deletion](https://telev.app/delete-data/)
