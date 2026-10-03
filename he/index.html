@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeleV – טלגרם בטלוויזיה: סרטונים ושידורים חיים באנדרואיד TV</title>
+  <meta name="description" content="TeleV היא אפליקציית טלגרם חינמית לאנדרואיד TV. צפו בסרטונים ובשידורים חיים מהערוצים והצ׳אטים שלכם בטלגרם על המסך הגדול, עם ניווט מלא בשלט. התחברות בסריקת QR.">
+  <link rel="canonical" href="https://telev.app/he/">
+  <link rel="alternate" hreflang="en" href="https://telev.app/">
+  <link rel="alternate" hreflang="he" href="https://telev.app/he/">
+  <link rel="alternate" hreflang="x-default" href="https://telev.app/">
+  <meta name="theme-color" content="#070d16">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/img/logo-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TeleV">
+  <meta property="og:title" content="TeleV – טלגרם בטלוויזיה">
+  <meta property="og:description" content="צפו בסרטונים ובשידורים חיים מערוצי הטלגרם שלכם באנדרואיד TV. חינם, עם תמיכה מלאה בשלט.">
+  <meta property="og:url" content="https://telev.app/he/">
+  <meta property="og:image" content="https://telev.app/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "TeleV",
+        "alternateName": "TeleV – טלגרם לטלוויזיה",
+        "description": "אפליקציית טלגרם לאנדרואיד TV, שנבנתה לצפייה בסרטונים ובשידורים חיים מהערוצים והצ׳אטים שלכם.",
+        "url": "https://telev.app/he/",
+        "image": "https://telev.app/assets/img/logo-512.png",
+        "screenshot": "https://telev.app/assets/img/dashboard.webp",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Android TV 8.0+",
+        "inLanguage": ["he", "en"],
+        "installUrl": "https://play.google.com/store/apps/details?id=com.telev.tv&hl=he",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ILS" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "אפשר לצפות בטלגרם בטלוויזיה?",
+            "acceptedAnswer": { "@type": "Answer", "text": "כן. מתקינים את TeleV מ-Google Play בטלוויזיית אנדרואיד או Google TV, סורקים את קוד ה-QR עם אפליקציית טלגרם בטלפון, והסרטונים מהערוצים והצ׳אטים שלכם מופיעים על המסך." }
+          },
+          {
+            "@type": "Question",
+            "name": "האם TeleV בחינם?",
+            "acceptedAnswer": { "@type": "Answer", "text": "כן, ההורדה והשימוש ב-TeleV חינמיים." }
+          },
+          {
+            "@type": "Question",
+            "name": "באילו מכשירים TeleV עובדת?",
+            "acceptedAnswer": { "@type": "Answer", "text": "בכל מכשיר Android TV או Google TV עם אנדרואיד 8.0 ומעלה: טלוויזיות חכמות של Sony, TCL, Hisense, Philips ועוד, Chromecast with Google TV, Google TV Streamer, Xiaomi Mi Box, Nvidia Shield ורוב סטרימרי האנדרואיד." }
+          },
+          {
+            "@type": "Question",
+            "name": "אפשר לצפות בשידורים חיים של טלגרם בטלוויזיה?",
+            "acceptedAnswer": { "@type": "Answer", "text": "כן. TeleV מציגה בזמן אמת שידורים חיים וצ׳אטי וידאו שמשודרים בערוצים ובקבוצות, ואפשר לעבור בין שידורים פעילים עם השלט." }
+          },
+          {
+            "@type": "Question",
+            "name": "החשבון שלי בטלגרם בטוח?",
+            "acceptedAnswer": { "@type": "Answer", "text": "TeleV בנויה על TDLib, הספרייה הרשמית של טלגרם. המידע עובר ישירות בין הטלוויזיה לשרתי טלגרם. למפתח אין שרתים והוא לא אוסף מידע אישי." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/he/" aria-label="TeleV – דף הבית" dir="ltr">
+        <img src="/assets/img/logo-192.png" alt="" width="34" height="34">
+        <span>Tele<span class="v">V</span></span>
+      </a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a class="hide-sm" href="#features">תכונות</a>
+        <a class="hide-sm" href="/he/guide/telegram-on-tv/">מדריך</a>
+        <a class="hide-sm" href="#faq">שאלות נפוצות</a>
+        <a class="lang" href="/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <h1>טלגרם בטלוויזיה. <span class="hl">בנוי לצפייה.</span></h1>
+      <p class="lead">TeleV הופכת את הסרטונים והשידורים החיים מהערוצים והצ׳אטים שלכם בטלגרם לחוויית צפייה נוחה מהספה, עם ניווט מלא בשלט.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.telev.tv&amp;hl=he">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg>
+          הורדה מ-Google Play
+        </a>
+        <a class="btn btn-ghost" href="/he/guide/telegram-on-tv/">איך זה עובד</a>
+      </div>
+      <p class="note">חינם · Android TV ו-Google TV · אנדרואיד 8.0 ומעלה</p>
+      <img class="hero-shot" src="/assets/img/dashboard.webp" width="1280" height="720"
+           alt="מסך הבית של TeleV בטלוויזיה: ערוצי טלגרם בשורות של כרטיסי וידאו, כולל שידור חי">
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>כל מה שאתם עוקבים אחריו בטלגרם, על המסך הגדול</h2>
+          <p>בלי שיקוף מסך ובלי טלפון ביד. אפליקציית טלוויזיה אמיתית לערוצים שאתם כבר צופים בהם.</p>
+        </div>
+        <div class="features">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></div>
+            <h3>התחברות מהספה</h3>
+            <p>סורקים קוד QR עם טלגרם בטלפון, או מתחברים עם מספר טלפון. יש תמיכה באימות דו-שלבי.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></div>
+            <h3>שידורים חיים</h3>
+            <p>צפייה בזמן אמת בשידורים חיים של ערוצים וקבוצות, ומעבר בין שידורים פעילים בלחיצה על השלט.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M10 8l5 3-5 3z"/></svg></div>
+            <h3>ניגון וידאו חלק</h3>
+            <p>הסרטונים מוזרמים ישירות מטלגרם עם מטמון חכם, כך שגם קבצים גדולים מאוד מתנגנים בלי למלא את האחסון בטלוויזיה.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div>
+            <h3>המשך צפייה</h3>
+            <p>ממשיכים כל סרטון בדיוק מהנקודה שבה עצרתם, ואפשר גם לשנות את מהירות הניגון.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+            <h3>ערוצים מועדפים</h3>
+            <p>לחיצה ארוכה על OK בערוץ מוסיפה אותו למועדפים, והוא תמיד יופיע ראשון במסך הבית.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <h3>חיפוש וארכיון</h3>
+            <p>מוצאים ערוצים ציבוריים ומדפדפים בכל הסרטונים שלהם. לצ׳אטים בארכיון יש מסך משלהם.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>מותאם לשלט</h2>
+          <p>כל מסך מתוכנן לניווט עם החיצים בשלט, וקריא גם מהצד השני של החדר.</p>
+        </div>
+        <div class="shots">
+          <figure>
+            <img src="/assets/img/live.webp" width="1280" height="720" loading="lazy" alt="שידור חי מטלגרם במסך מלא ב-TeleV">
+            <figcaption>שידורים חיים בזמן אמת</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/img/vod.webp" width="1280" height="720" loading="lazy" alt="סרטון מערוץ טלגרם מתנגן בנגן הטלוויזיה של TeleV">
+            <figcaption>נגן וידאו במסך מלא</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/img/login.webp" width="1280" height="720" loading="lazy" alt="מסך ההתחברות של TeleV עם קוד QR לסריקה מאפליקציית טלגרם בטלפון">
+            <figcaption>התחברות בסריקת QR</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>מוכן לצפייה תוך דקה</h2>
+        </div>
+        <div class="steps">
+          <div class="card">
+            <h3>מתקינים את TeleV</h3>
+            <p>מחפשים TeleV בחנות Google Play בטלוויזיה, או מתקינים מ-<a href="https://play.google.com/store/apps/details?id=com.telev.tv&amp;hl=he">Google Play באתר</a>.</p>
+          </div>
+          <div class="card">
+            <h3>סורקים את קוד ה-QR</h3>
+            <p>בטלפון פותחים טלגרם ← הגדרות ← מכשירים ← התחבר במחשב, וסורקים את הקוד שעל המסך.</p>
+          </div>
+          <div class="card">
+            <h3>מתחילים לצפות</h3>
+            <p>הערוצים והצ׳אטים שלכם מופיעים בשורות של סרטונים. בוחרים עם השלט ולוחצים OK.</p>
+          </div>
+        </div>
+        <p style="text-align:center;margin-top:24px"><a href="/he/guide/telegram-on-tv/">למדריך המלא שלב אחר שלב ←</a></p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>שאלות נפוצות</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>אפשר לצפות בטלגרם בטלוויזיה?</summary>
+            <p>כן. מתקינים את TeleV מ-Google Play בטלוויזיית אנדרואיד או Google TV, סורקים את קוד ה-QR עם אפליקציית טלגרם בטלפון, והסרטונים מהערוצים והצ׳אטים שלכם מופיעים על המסך.</p>
+          </details>
+          <details>
+            <summary>האם TeleV בחינם?</summary>
+            <p>כן, ההורדה והשימוש ב-TeleV חינמיים.</p>
+          </details>
+          <details>
+            <summary>באילו מכשירים TeleV עובדת?</summary>
+            <p>בכל מכשיר Android TV או Google TV עם אנדרואיד 8.0 ומעלה: טלוויזיות חכמות של Sony, TCL, Hisense, Philips ועוד, Chromecast with Google TV, Google TV Streamer, Xiaomi Mi Box, Nvidia Shield ורוב סטרימרי האנדרואיד.</p>
+          </details>
+          <details>
+            <summary>אפשר לצפות בשידורים חיים של טלגרם בטלוויזיה?</summary>
+            <p>כן. TeleV מציגה בזמן אמת שידורים חיים וצ׳אטי וידאו שמשודרים בערוצים ובקבוצות, ואפשר לעבור בין שידורים פעילים עם השלט.</p>
+          </details>
+          <details>
+            <summary>החשבון שלי בטלגרם בטוח?</summary>
+            <p>TeleV בנויה על TDLib, הספרייה הרשמית של טלגרם. המידע עובר ישירות בין הטלוויזיה לשרתי טלגרם. למפתח אין שרתים והוא לא אוסף מידע אישי. פרטים נוספים ב<a href="/he/privacy/">מדיניות הפרטיות</a>.</p>
+          </details>
+          <details>
+            <summary>אפשר לשלוח הודעות מ-TeleV?</summary>
+            <p>לא. TeleV נבנתה לצפייה בלבד. היא לא שולחת הודעות ולעולם לא משתמשת במיקרופון או במצלמה.</p>
+          </details>
+          <details>
+            <summary>האפליקציה בעברית?</summary>
+            <p>כן. TeleV זמינה במלואה בעברית ובאנגלית, כולל ממשק מימין לשמאל.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="band">
+          <h2>ערוצי הטלגרם שלכם ראויים למסך גדול יותר</h2>
+          <p>חינם ב-Google Play ל-Android TV ול-Google TV.</p>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.telev.tv&amp;hl=he">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg>
+            הורדה מ-Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 TeleV</span>
+      <nav aria-label="ניווט תחתון">
+        <a href="/he/guide/telegram-on-tv/">איך לצפות בטלגרם בטלוויזיה</a>
+        <a href="/he/privacy/">מדיניות פרטיות</a>
+        <a href="mailto:elimz2000@gmail.com">יצירת קשר</a>
+        <a href="/" hreflang="en" lang="en">English</a>
+      </nav>
+      <p class="disclaimer">TeleV היא אפליקציה לא רשמית של צד שלישי, ואינה קשורה לטלגרם או מאושרת על ידה. Telegram הוא סימן מסחרי של Telegram FZ-LLC. Google Play ו-Android TV הם סימנים מסחריים של Google LLC.</p>
+    </div>
+  </footer>
+</body>
+</html>
