@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TeleV – Watch Telegram Videos &amp; Live Streams on Android TV</title>
+  <title>TeleV – Telegram App for Android TV &amp; Google TV</title>
   <meta name="description" content="TeleV is a free Telegram app for Android TV. Watch videos and live streams from your Telegram channels and chats on the big screen, with full remote control navigation. Sign in with a QR code.">
   <link rel="canonical" href="https://telev.app/">
   <meta name="theme-color" content="#070d16">
@@ -26,61 +26,170 @@
   <link rel="stylesheet" href="/assets/style.css">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "SoftwareApplication",
-        "name": "TeleV",
-        "alternateName": "TeleV – Telegram for TV",
-        "description": "A Telegram client for Android TV, built for watching videos and live streams from your channels and chats.",
-        "url": "https://telev.app/",
-        "image": "https://telev.app/assets/img/logo-512.png",
-        "screenshot": "https://telev.app/assets/img/dashboard.webp",
-        "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "Android TV 8.0+",
-        "inLanguage": ["en", "he"],
-        "installUrl": "https://play.google.com/store/apps/details?id=com.telev.tv",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-      },
-      {
-        "@type": "WebSite",
-        "name": "TeleV",
-        "url": "https://telev.app/",
-        "inLanguage": "en"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Can I watch Telegram on my TV?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Install TeleV from Google Play on your Android TV or Google TV device, scan the QR code with the Telegram app on your phone, and the videos from your channels and chats appear on the TV." }
-          },
-          {
-            "@type": "Question",
-            "name": "Is TeleV free?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, TeleV is free to download and use." }
-          },
-          {
-            "@type": "Question",
-            "name": "Which devices does TeleV support?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Any Android TV or Google TV device running Android 8.0 or newer: smart TVs from Sony, TCL, Hisense, Philips and others, Chromecast with Google TV, Google TV Streamer, Xiaomi Mi Box, Nvidia Shield and most Android TV boxes." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I watch Telegram live streams on TV?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. TeleV plays live streams and video chats broadcast in channels and groups in real time, and you can switch between active live streams with the remote." }
-          },
-          {
-            "@type": "Question",
-            "name": "Is my Telegram account safe?",
-            "acceptedAnswer": { "@type": "Answer", "text": "TeleV is built on TDLib, Telegram's official library. Your data goes directly between your TV and Telegram's servers. The developer runs no servers and collects no personal data." }
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://telev.app/#org",
+      "name": "TeleV",
+      "url": "https://telev.app/",
+      "logo": "https://telev.app/assets/img/logo-512.png",
+      "email": "support@telev.app",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@telev.app"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://telev.app/#website",
+      "name": "TeleV",
+      "url": "https://telev.app/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://telev.app/#org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://telev.app/#app",
+      "name": "TeleV",
+      "alternateName": [
+        "TeleV – Telegram for TV",
+        "Telegram for Android TV"
+      ],
+      "description": "A free Telegram app for Android TV and Google TV. Watch videos and live streams from your Telegram channels, groups and chats on the TV with full remote control navigation.",
+      "url": "https://telev.app/",
+      "image": "https://telev.app/assets/img/logo-512.png",
+      "screenshot": [
+        "https://telev.app/assets/img/dashboard.webp",
+        "https://telev.app/assets/img/live.webp",
+        "https://telev.app/assets/img/vod.webp",
+        "https://telev.app/assets/img/login.webp"
+      ],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Video player",
+      "operatingSystem": "Android TV, Google TV (Android 8.0 or newer)",
+      "softwareVersion": "1.0.25",
+      "inLanguage": [
+        "en",
+        "he"
+      ],
+      "featureList": [
+        "Sign in with a QR code or phone number",
+        "Watch videos from Telegram channels, groups and chats",
+        "Watch Telegram live streams and video chats in real time",
+        "Switch between live streams with the remote",
+        "Continue watching where you left off",
+        "Adjustable playback speed",
+        "Favorite channels",
+        "Search public channels",
+        "Archived chats",
+        "Full D-pad remote navigation"
+      ],
+      "installUrl": "https://play.google.com/store/apps/details?id=com.telev.tv",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.telev.tv",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.telev.tv"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://telev.app/#org"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is TeleV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TeleV is a free Telegram app for Android TV and Google TV. It shows the videos and live streams from your Telegram channels, groups and chats on your TV, with full remote control navigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an official Telegram app for Android TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Telegram doesn't offer an official app for Android TV or Google TV. TeleV is an independent, unofficial app built on TDLib, Telegram's official open-source library."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I watch Telegram on my TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install TeleV from Google Play on your Android TV or Google TV, then scan the QR code on the screen with the Telegram app on your phone. Your channels and chats appear on the TV. See the step-by-step guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TeleV free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, TeleV is free to download and use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which devices does TeleV support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any Android TV or Google TV device running Android 8.0 or newer, including Chromecast with Google TV, Google TV Streamer, Nvidia Shield, Xiaomi Mi Box, and Sony, TCL, Hisense and Philips smart TVs. See the full list of supported devices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I watch Telegram on a Samsung or LG TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly, because Samsung and LG TVs can't run Android apps. Connect a Chromecast with Google TV or a Google TV Streamer and install TeleV on it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I watch Telegram live streams on TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. TeleV plays live streams and video chats broadcast in channels and groups in real time, and you can switch between active live streams with the remote. How to watch live streams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my Telegram account safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TeleV is built on TDLib, Telegram's official library. Your data goes directly between your TV and Telegram's servers, and TeleV doesn't collect personal data. See the privacy policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I send messages from TeleV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. TeleV is built for watching. It doesn't send messages and never uses the microphone or camera."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages does TeleV support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TeleV is currently available in English and Hebrew. More languages are on the way."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -94,6 +203,7 @@
       <nav class="nav" aria-label="Main">
         <a class="hide-sm" href="#features">Features</a>
         <a class="hide-sm" href="/guide/watch-telegram-on-tv/">How to</a>
+        <a class="hide-sm" href="/devices/">Devices</a>
         <a class="hide-sm" href="#faq">FAQ</a>
       </nav>
     </div>
@@ -111,7 +221,7 @@
         <a class="btn btn-ghost" href="/guide/watch-telegram-on-tv/">How it works</a>
       </div>
       <p class="note">Free · Android TV &amp; Google TV · Android 8.0+</p>
-      <img class="hero-shot" src="/assets/img/dashboard.webp" width="1280" height="720"
+      <img class="hero-shot" fetchpriority="high" src="/assets/img/dashboard.webp" width="1280" height="720"
            alt="TeleV home screen on a TV, showing Telegram channels as rows of video cards with a live stream">
     </div>
 
@@ -198,7 +308,7 @@
             <p>Your channels and chats appear as rows of videos. Pick one with the remote and press OK.</p>
           </div>
         </div>
-        <p style="text-align:center;margin-top:24px"><a href="/guide/watch-telegram-on-tv/">Read the full step-by-step guide →</a></p>
+        <p style="text-align:center;margin-top:24px"><a href="/guide/watch-telegram-on-tv/">Read the full step-by-step guide →</a> · <a href="/devices/">Supported devices</a> · <a href="/guide/telegram-live-streams-on-tv/">Live streams on TV</a></p>
       </div>
     </section>
 
@@ -209,8 +319,16 @@
         </div>
         <div class="faq">
           <details>
-            <summary>Can I watch Telegram on my TV?</summary>
-            <p>Yes. Install TeleV from Google Play on your Android TV or Google TV device, scan the QR code with the Telegram app on your phone, and the videos from your channels and chats appear on the TV.</p>
+            <summary>What is TeleV?</summary>
+            <p>TeleV is a free Telegram app for Android TV and Google TV. It shows the videos and live streams from your Telegram channels, groups and chats on your TV, with full remote control navigation.</p>
+          </details>
+          <details>
+            <summary>Is there an official Telegram app for Android TV?</summary>
+            <p>No. Telegram doesn't offer an official app for Android TV or Google TV. TeleV is an independent, unofficial app built on TDLib, Telegram's official open-source library.</p>
+          </details>
+          <details>
+            <summary>How do I watch Telegram on my TV?</summary>
+            <p>Install TeleV from Google Play on your Android TV or Google TV, then scan the QR code on the screen with the Telegram app on your phone. Your channels and chats appear on the TV. See the <a href="/guide/watch-telegram-on-tv/">step-by-step guide</a>.</p>
           </details>
           <details>
             <summary>Is TeleV free?</summary>
@@ -218,23 +336,27 @@
           </details>
           <details>
             <summary>Which devices does TeleV support?</summary>
-            <p>Any Android TV or Google TV device running Android 8.0 or newer: smart TVs from Sony, TCL, Hisense, Philips and others, Chromecast with Google TV, Google TV Streamer, Xiaomi Mi Box, Nvidia Shield and most Android TV boxes.</p>
+            <p>Any Android TV or Google TV device running Android 8.0 or newer, including Chromecast with Google TV, Google TV Streamer, Nvidia Shield, Xiaomi Mi Box, and Sony, TCL, Hisense and Philips smart TVs. See the <a href="/devices/">full list of supported devices</a>.</p>
+          </details>
+          <details>
+            <summary>Can I watch Telegram on a Samsung or LG TV?</summary>
+            <p>Not directly, because Samsung and LG TVs can't run Android apps. Connect a Chromecast with Google TV or a Google TV Streamer and install TeleV on it.</p>
           </details>
           <details>
             <summary>Can I watch Telegram live streams on TV?</summary>
-            <p>Yes. TeleV plays live streams and video chats broadcast in channels and groups in real time, and you can switch between active live streams with the remote.</p>
+            <p>Yes. TeleV plays live streams and video chats broadcast in channels and groups in real time, and you can switch between active live streams with the remote. <a href="/guide/telegram-live-streams-on-tv/">How to watch live streams</a>.</p>
           </details>
           <details>
             <summary>Is my Telegram account safe?</summary>
-            <p>TeleV is built on TDLib, Telegram's official library. Your data goes directly between your TV and Telegram's servers. The developer runs no servers and collects no personal data. See the <a href="/privacy/">privacy policy</a>.</p>
+            <p>TeleV is built on TDLib, Telegram's official library. Your data goes directly between your TV and Telegram's servers, and TeleV doesn't collect personal data. See the <a href="/privacy/">privacy policy</a>.</p>
           </details>
           <details>
             <summary>Can I send messages from TeleV?</summary>
-            <p>No. TeleV is a viewer built for watching. It doesn't send messages and never uses the microphone or camera.</p>
+            <p>No. TeleV is built for watching. It doesn't send messages and never uses the microphone or camera.</p>
           </details>
           <details>
-            <summary>Does TeleV support Hebrew?</summary>
-            <p>Yes. TeleV is fully available in English and Hebrew, including a right-to-left layout.</p>
+            <summary>What languages does TeleV support?</summary>
+            <p>TeleV is currently available in English and Hebrew. More languages are on the way.</p>
           </details>
         </div>
       </div>
@@ -259,6 +381,8 @@
       <span>© 2026 TeleV</span>
       <nav aria-label="Footer">
         <a href="/guide/watch-telegram-on-tv/">How to watch Telegram on TV</a>
+        <a href="/guide/telegram-live-streams-on-tv/">Live streams on TV</a>
+        <a href="/devices/">Supported devices</a>
         <a href="/privacy/">Privacy policy</a>
         <a href="/terms/">Terms of use</a>
         <a href="/accessibility/">Accessibility</a>
