@@ -67,6 +67,14 @@ a:hover { color: #7cc9ff; }
   .nav .hide-sm { display: none; }
 }
 
+.nav .nav-tg {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0072c9; color: #fff; font-weight: 600;
+  border-radius: 999px; padding: 6px 14px;
+}
+.nav .nav-tg:hover { background: #0066b8; color: #fff; }
+.nav .nav-tg svg { width: 16px; height: 16px; flex: none; }
+
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; gap: 10px;
@@ -100,6 +108,27 @@ a:hover { color: #7cc9ff; }
   border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: 0 30px 80px rgba(0, 0, 0, .55), 0 0 90px rgba(5, 151, 251, .18);
+}
+
+/* Updates channel */
+.updates-section { padding: 8px 0 0; }
+.updates {
+  display: flex; align-items: center; gap: 22px;
+  max-width: 1040px; margin: 0 auto; padding: 24px 28px;
+  background: linear-gradient(135deg, #0b3a66, #0a1d33);
+  border: 1px solid rgba(50, 174, 255, .45); border-radius: var(--radius);
+  box-shadow: 0 0 60px rgba(5, 151, 251, .15);
+}
+.updates-ico {
+  flex: none; width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center; background: #0597fb; color: #fff;
+}
+.updates-ico svg { width: 30px; height: 30px; }
+.updates-text { flex: 1; }
+.updates-text h2 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.3px; }
+.updates-text p { margin: 0; color: #c3d6ea; font-size: 16px; }
+@media (max-width: 640px) {
+  .updates { flex-direction: column; text-align: center; padding: 24px 20px; }
 }
 
 /* Sections */
