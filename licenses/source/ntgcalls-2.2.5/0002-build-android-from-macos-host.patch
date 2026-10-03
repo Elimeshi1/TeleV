@@ -1,0 +1,29 @@
+--- a/cmake/PlatformUtils.cmake
++++ b/cmake/PlatformUtils.cmake
+@@ -1,5 +1,8 @@
+ set(cmake_dir ${CMAKE_SOURCE_DIR}/cmake)
+-if(WIN32)
++if (ANDROID_ABI)
++    # TeleV: cross-compiling for Android from a macOS host.
++    set(OS_NAME ANDROID)
++elseif(WIN32)
+     set(OS_NAME WINDOWS)
+ elseif (UNIX AND NOT APPLE)
+     if (ANDROID_ABI)
+--- a/cmake/GitUtils.cmake
++++ b/cmake/GitUtils.cmake
+@@ -65,6 +65,14 @@
+ 
+ function(GitFile)
+     cmake_parse_arguments(ARG "" "" "URL;DIRECTORY" ${ARGN})
++    # TeleV: googlesource rate-limits repeat fetches and the CMake base64 decoder turns the error
++    # page into garbage, overwriting a good file. Fetch once, then keep it.
++    if (EXISTS ${ARG_DIRECTORY})
++        file(SIZE ${ARG_DIRECTORY} _existing_size)
++        if (_existing_size GREATER 0)
++            return()
++        endif ()
++    endif ()
+     if ("${ARG_URL}" MATCHES "googlesource.com")
+         set(BASE64 TRUE)
+         set(ARG_URL ${ARG_URL}?format=text)

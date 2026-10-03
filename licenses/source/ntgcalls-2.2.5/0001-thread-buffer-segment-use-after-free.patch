@@ -1,0 +1,40 @@
+--- a/wrtc/include/wrtc/interfaces/mtproto/thread_buffer.hpp
++++ b/wrtc/include/wrtc/interfaces/mtproto/thread_buffer.hpp
+@@ -34,6 +34,9 @@
+         std::mutex mutex;
+         MediaSegment* lastSegment = nullptr;
+         int checkSyncCount = 0;
++        // TeleV patch: threads currently inside frameCallback with the mutex released, i.e.
++        // still reading lastSegment. The segment must not be removed until this drops to 0.
++        int segmentUsers = 0;
+         std::atomic_bool running = true;
+         std::unique_ptr<SyncHelper> audioSync, videoSync;
+         std::chrono::milliseconds audioConsumedTime = 0ms, videoConsumedTime = 0ms;
+--- a/wrtc/src/interfaces/mtproto/thread_buffer.cpp
++++ b/wrtc/src/interfaces/mtproto/thread_buffer.cpp
+@@ -38,9 +38,11 @@
+                     while (running) {
+                         std::unique_lock lock(mutex);
+                         if (const auto segment = getSegmentSync(mediaType)) {
++                            segmentUsers++;
+                             lock.unlock();
+                             frameCallback(mediaType, segment, mediaType == webrtc::MediaType::AUDIO ? audioConsumedTime : videoConsumedTime);
+                             lock.lock();
++                            segmentUsers--;
+                         }
+                         checkSegmentsSync();
+                         lock.unlock();
+@@ -66,7 +68,12 @@
+     }
+ 
+     MediaSegment* ThreadBuffer::getSegmentSync(const webrtc::MediaType mediaType) {
+-        if (audioConsumedTime >= 1s && videoConsumedTime >= 1s) {
++        // TeleV patch: the audio and video threads share lastSegment and call frameCallback on it
++        // with the mutex released. Removing it while the other thread is still in there frees the
++        // MediaSegment under it (use-after-free, SIGSEGV in the segment map on slow devices), so
++        // hold the removal until no thread is using the segment. The caller that finds its own
++        // consumed time at 1s gets nullptr below and simply retries on its next tick.
++        if (audioConsumedTime >= 1s && videoConsumedTime >= 1s && segmentUsers == 0) {
+             audioConsumedTime = 0ms;
+             videoConsumedTime = 0ms;
+             lastSegment = nullptr;

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>רישיונות קוד פתוח – TeleV</title>
+  <meta name="description" content="התוכנות בקוד פתוח ש-TeleV משתמשת בהן, הרישיונות שלהן, וקוד המקור של NTgCalls לפי רישיון LGPL.">
+  <link rel="canonical" href="https://telev.app/he/licenses/">
+  <link rel="alternate" hreflang="en" href="https://telev.app/licenses/">
+  <link rel="alternate" hreflang="he" href="https://telev.app/he/licenses/">
+  <link rel="alternate" hreflang="x-default" href="https://telev.app/licenses/">
+  <meta name="theme-color" content="#070d16">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/img/logo-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">דילוג לתוכן הראשי</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/he/" aria-label="TeleV – דף הבית" dir="ltr">
+        <img src="/assets/img/logo-192.png" alt="" width="34" height="34">
+        <span>Tele<span class="v">V</span></span>
+      </a>
+      <nav class="nav" aria-label="ניווט ראשי">
+        <a class="lang" href="/licenses/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="article legal">
+    <h1>רישיונות קוד פתוח</h1>
+    <p class="meta">חל על TeleV ל-Android TV מגרסה 1.0.25 ואילך. עודכן לאחרונה: 3 באוקטובר 2026</p>
+    <p>TeleV בנויה בעזרת התוכנות בקוד פתוח שמפורטות כאן, ואנחנו מודים ליוצרים שלהן. כל רכיב משמש לפי הרישיון שלו, והנוסח המלא של כל רישיון מקושר מהדף הזה. הרישיונות חלים רק על הרכיבים האלה, ולא משנים את <a href="/he/terms/">תנאי השימוש</a> של שאר TeleV. שמות הרכיבים והרישיונות מובאים בשפת המקור.</p>
+
+    <h2 id="components">רכיבים</h2>
+    <div class="table-wrap">
+    <table dir="ltr">
+      <thead><tr><th>Component</th><th>Copyright</th><th>License</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/tdlib/td">TDLib</a> (Telegram Database Library) 1.8.67</td><td>© Aliaksei Levin, Arseny Smirnov</td><td><a href="/licenses/texts/BSL-1.0.txt">Boost Software License 1.0</a></td></tr>
+        <tr><td><a href="https://www.openssl.org/">OpenSSL</a> 1.1.1w, statically linked into TDLib, patched</td><td>© The OpenSSL Project; © Eric Young</td><td><a href="/licenses/texts/OpenSSL-1.1.1.txt">OpenSSL License and original SSLeay License</a></td></tr>
+        <tr><td><a href="https://zlib.net/">zlib</a>, used by TDLib</td><td>© Jean-loup Gailly and Mark Adler</td><td><a href="/licenses/texts/zlib.txt">zlib License</a></td></tr>
+        <tr><td><a href="https://github.com/pytgcalls/ntgcalls">NTgCalls</a> 2.2.5, modified</td><td>© The NTgCalls authors (PyTgCalls)</td><td><a href="/licenses/texts/LGPL-3.0.txt">GNU LGPL v3</a>, incorporating the <a href="/licenses/texts/GPL-3.0.txt">GNU GPL v3</a></td></tr>
+        <tr><td><a href="https://webrtc.org/">WebRTC</a>, included in NTgCalls, with its bundled third-party components</td><td>© The WebRTC project authors</td><td><a href="/licenses/texts/WebRTC-BSD-3-Clause.txt">BSD 3-Clause</a>; bundled components under their own licenses (<a href="https://webrtc.googlesource.com/src/">WebRTC source</a>)</td></tr>
+        <tr><td>Android Jetpack (AndroidX): Compose UI, Material 3, Activity, Lifecycle, Emoji2</td><td>© The Android Open Source Project</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://developer.android.com/media/media3">AndroidX Media3 / ExoPlayer</a> 1.10.0</td><td>© The Android Open Source Project</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://kotlinlang.org/">Kotlin</a> standard library, <a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx.coroutines</a></td><td>© JetBrains s.r.o. and Kotlin contributors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://coil-kt.github.io/coil/">Coil</a> 2.7.0</td><td>© Coil Contributors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://github.com/zxing/zxing">ZXing</a> core 3.5.3</td><td>© ZXing authors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 id="openssl">הצהרת OpenSSL</h2>
+    <p dir="ltr">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (<a href="https://www.openssl.org/">http://www.openssl.org/</a>).</p>
+    <p dir="ltr">This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).</p>
+    <p>בגרסת OpenSSL שב-TeleV הוסרה בדיקת מעבד אחת (בדיקת השעון הכללי של ARMv7 בקובץ <code>crypto/armcap.c</code>), שגורמת לקריסה בחלק ממכשירי Android TV. גם OpenSSL 3.x הסירה את הבדיקה הזו.</p>
+
+    <h2 id="ntgcalls">קוד המקור של NTgCalls (רישיון LGPL)</h2>
+    <p>TeleV משתמשת ב-NTgCalls כספרייה משותפת נפרדת (<code>libntgcalls.so</code>). הגרסה ב-TeleV היא NTgCalls 2.2.5 עם השינויים הבאים:</p>
+    <ul>
+      <li><a href="/licenses/source/ntgcalls-2.2.5/0001-thread-buffer-segment-use-after-free.patch" dir="ltr">0001-thread-buffer-segment-use-after-free.patch</a> מתקן קריסה שקורית כשתהליכוני האודיו והווידאו משתמשים באותו מקטע מדיה.</li>
+      <li><a href="/licenses/source/ntgcalls-2.2.5/0002-build-android-from-macos-host.patch" dir="ltr">0002-build-android-from-macos-host.patch</a> משנה רק את סקריפטי הבנייה.</li>
+    </ul>
+    <p>לקבלת קוד המקור המלא: מורידים את התגית <code>v2.2.5</code> מ-<a href="https://github.com/pytgcalls/ntgcalls">github.com/pytgcalls/ntgcalls</a> ומחילים את שני השינויים עם <code>git apply</code>. הוראות הבנייה נמצאות בריפו של NTgCalls. לפי רישיון LGPL מותר לשנות את NTgCalls ולהשתמש בגרסה ששיניתם עם TeleV, על ידי החלפת <code>libntgcalls.so</code> בחבילת האפליקציה.</p>
+    <p>אם תעדיפו לקבל את קוד המקור מאיתנו, כתבו ל-<a href="mailto:elimz2000@gmail.com" dir="ltr">elimz2000@gmail.com</a> ונשלח אותו ללא תשלום. ההצעה בתוקף לפחות שלוש שנים מהפעם האחרונה שבה הפצנו את הגרסה הרלוונטית.</p>
+
+    <h2 id="trademarks">סימנים מסחריים</h2>
+    <p>Telegram הוא סימן מסחרי של Telegram FZ-LLC. Android, Android TV, Google TV ו-Google Play הם סימנים מסחריים של Google LLC. שמות אחרים עשויים להיות סימנים מסחריים של בעליהם. השימוש בהם כאן אינו מעיד על תמיכה או אישור.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 TeleV</span>
+      <nav aria-label="ניווט תחתון">
+        <a href="/he/guide/telegram-on-tv/">איך לצפות בטלגרם בטלוויזיה</a>
+        <a href="/he/privacy/">מדיניות פרטיות</a>
+        <a href="/he/terms/">תנאי שימוש</a>
+        <a href="/he/accessibility/">הצהרת נגישות</a>
+        <a href="/he/legal/">מידע משפטי</a>
+        <a href="mailto:elimz2000@gmail.com">יצירת קשר</a>
+        <a href="/licenses/" hreflang="en" lang="en">English</a>
+      </nav>
+      <p class="disclaimer">TeleV היא אפליקציה לא רשמית של צד שלישי, ואינה קשורה לטלגרם או מאושרת על ידה. Telegram הוא סימן מסחרי של Telegram FZ-LLC. Google Play ו-Android TV הם סימנים מסחריים של Google LLC.</p>
+    </div>
+  </footer>
+</body>
+</html>

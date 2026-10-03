@@ -65,6 +65,86 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/terms/"/>
   </url>
   <url>
+    <loc>https://telev.app/delete-data/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/delete-data/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/delete-data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/delete-data/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/he/delete-data/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/delete-data/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/delete-data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/delete-data/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/legal/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/legal/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/legal/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/he/legal/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/legal/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/legal/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/licenses/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/licenses/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/licenses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/licenses/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/he/licenses/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/licenses/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/licenses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/licenses/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/copyright/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/copyright/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/copyright/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/copyright/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/he/copyright/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/copyright/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/copyright/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/copyright/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/cookies/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/cookies/"/>
+  </url>
+  <url>
+    <loc>https://telev.app/he/cookies/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telev.app/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://telev.app/he/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telev.app/cookies/"/>
+  </url>
+  <url>
     <loc>https://telev.app/accessibility/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.2</priority>
