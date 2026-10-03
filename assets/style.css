@@ -140,9 +140,16 @@ section { padding: 64px 0; }
 }
 .section-title p { color: var(--muted); margin: 0 auto; max-width: 640px; }
 
+/* Six cards: 3 + 3 on desktop, 2 + 2 + 2 on tablets, one column on phones */
 .features {
   display: grid; gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .features { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .features { grid-template-columns: 1fr; }
 }
 .card {
   background: linear-gradient(180deg, var(--surface), var(--bg-2));
