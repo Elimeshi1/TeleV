@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>רישיונות קוד פתוח – TeleV</title>
-  <meta name="description" content="התוכנות בקוד פתוח ש-TeleV משתמשת בהן והרישיונות שלהן, קרדיטים לסרטוני ההדגמה, והצעה לקבלת קוד מקור של רכיבים ברישיון LGPL.">
+  <meta name="description" content="רכיבי הקוד הפתוח הכלולים ב-TeleV והרישיונות שלהם.">
   <link rel="canonical" href="https://telev.app/he/licenses/">
   <link rel="alternate" hreflang="en" href="https://telev.app/licenses/">
   <link rel="alternate" hreflang="he" href="https://telev.app/he/licenses/">
@@ -31,46 +31,34 @@
 
   <main id="main" class="article legal">
     <h1>רישיונות קוד פתוח</h1>
-    <p class="meta">חל על TeleV ל-Android TV מגרסה 1.0.25 ואילך. עודכן לאחרונה: 3 באוקטובר 2026</p>
-    <p>TeleV בנויה בעזרת התוכנות בקוד פתוח שמפורטות כאן, ואנחנו מודים ליוצרים שלהן. כל רכיב משמש לפי הרישיון שלו, והנוסח המלא של כל רישיון מקושר מהדף הזה. הרישיונות חלים רק על הרכיבים האלה, ולא משנים את <a href="/he/terms/">תנאי השימוש</a> של שאר TeleV. שמות הרכיבים והרישיונות מובאים בשפת המקור.</p>
+    <p class="meta">עודכן לאחרונה: 3 באוקטובר 2026</p>
+    <p>TeleV כוללת את רכיבי הקוד הפתוח הבאים, וכל אחד מהם משמש בהתאם לרישיונו.</p>
 
-    <h2 id="components">רכיבים</h2>
     <div class="table-wrap">
     <table dir="ltr">
       <thead><tr><th>Component</th><th>Copyright</th><th>License</th></tr></thead>
       <tbody>
-        <tr><td><a href="https://github.com/tdlib/td">TDLib</a> (Telegram Database Library) 1.8.67</td><td>© Aliaksei Levin, Arseny Smirnov</td><td><a href="/licenses/texts/BSL-1.0.txt">Boost Software License 1.0</a></td></tr>
-        <tr><td><a href="https://www.openssl.org/">OpenSSL</a> 1.1.1w, used by TDLib</td><td>© The OpenSSL Project; © Eric Young</td><td><a href="/licenses/texts/OpenSSL-1.1.1.txt">OpenSSL License and original SSLeay License</a></td></tr>
-        <tr><td><a href="https://zlib.net/">zlib</a>, used by TDLib</td><td>© Jean-loup Gailly and Mark Adler</td><td><a href="/licenses/texts/zlib.txt">zlib License</a></td></tr>
-        <tr><td><a href="https://github.com/pytgcalls/ntgcalls">NTgCalls</a> 2.2.5</td><td>© The NTgCalls authors (PyTgCalls)</td><td><a href="/licenses/texts/LGPL-3.0.txt">GNU LGPL v3</a>, incorporating the <a href="/licenses/texts/GPL-3.0.txt">GNU GPL v3</a></td></tr>
-        <tr><td><a href="https://webrtc.org/">WebRTC</a>, included in NTgCalls, with its bundled third-party components</td><td>© The WebRTC project authors</td><td><a href="/licenses/texts/WebRTC-BSD-3-Clause.txt">BSD 3-Clause</a>; bundled components under their own licenses (<a href="https://webrtc.googlesource.com/src/">WebRTC source</a>)</td></tr>
-        <tr><td>Android Jetpack (AndroidX): Compose UI, Material 3, Activity, Lifecycle, Emoji2</td><td>© The Android Open Source Project</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
-        <tr><td><a href="https://developer.android.com/media/media3">AndroidX Media3 / ExoPlayer</a> 1.10.0</td><td>© The Android Open Source Project</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
-        <tr><td><a href="https://kotlinlang.org/">Kotlin</a> standard library, <a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx.coroutines</a></td><td>© JetBrains s.r.o. and Kotlin contributors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
-        <tr><td><a href="https://coil-kt.github.io/coil/">Coil</a> 2.7.0</td><td>© Coil Contributors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
-        <tr><td><a href="https://github.com/zxing/zxing">ZXing</a> core 3.5.3</td><td>© ZXing authors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://github.com/tdlib/td">TDLib</a></td><td>© Aliaksei Levin, Arseny Smirnov</td><td><a href="/licenses/texts/BSL-1.0.txt">Boost Software License 1.0</a></td></tr>
+        <tr><td><a href="https://www.openssl.org/">OpenSSL</a> 1.1.1</td><td>© The OpenSSL Project; © Eric Young</td><td><a href="/licenses/texts/OpenSSL-1.1.1.txt">OpenSSL License / SSLeay License</a></td></tr>
+        <tr><td><a href="https://zlib.net/">zlib</a></td><td>© Jean-loup Gailly, Mark Adler</td><td><a href="/licenses/texts/zlib.txt">zlib License</a></td></tr>
+        <tr><td><a href="https://github.com/pytgcalls/ntgcalls">NTgCalls</a></td><td>© The NTgCalls authors</td><td><a href="/licenses/texts/LGPL-3.0.txt">GNU LGPL v3</a> (<a href="/licenses/texts/GPL-3.0.txt">GNU GPL v3</a>)</td></tr>
+        <tr><td><a href="https://webrtc.org/">WebRTC</a></td><td>© The WebRTC project authors</td><td><a href="/licenses/texts/WebRTC-BSD-3-Clause.txt">BSD 3-Clause</a></td></tr>
+        <tr><td>AndroidX, Jetpack Compose, Media3</td><td>© The Android Open Source Project</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td>Kotlin, kotlinx.coroutines</td><td>© JetBrains s.r.o.</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://coil-kt.github.io/coil/">Coil</a></td><td>© Coil Contributors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
+        <tr><td><a href="https://github.com/zxing/zxing">ZXing</a></td><td>© ZXing authors</td><td><a href="/licenses/texts/Apache-2.0.txt">Apache License 2.0</a></td></tr>
       </tbody>
     </table>
     </div>
 
-    <h2 id="openssl">הצהרת OpenSSL</h2>
-    <p dir="ltr">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (<a href="https://www.openssl.org/">http://www.openssl.org/</a>).</p>
-    <p dir="ltr">This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).</p>
+    <p dir="ltr">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (<a href="https://www.openssl.org/">http://www.openssl.org/</a>). This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).</p>
+    <p>קוד המקור של רכיבים המופצים ברישיון GNU LGPL זמין לפי בקשה בכתובת <a href="mailto:support@telev.app" dir="ltr">support@telev.app</a>, למשך שלוש שנים.</p>
 
-    <h2 id="lgpl">קוד המקור של רכיבים ברישיון LGPL</h2>
-    <p>TeleV משתמשת ב-NTgCalls כספרייה משותפת נפרדת, לפי רישיון GNU LGPL v3. כפי שהרישיון מתיר, אפשר להחליף את הספרייה בגרסה משלכם. כדי לקבל את קוד המקור המלא של גרסת NTgCalls שכלולה ב-TeleV, כתבו ל-<a href="mailto:support@telev.app" dir="ltr">support@telev.app</a>. נשלח אותו ללא תשלום, וההצעה בתוקף לפחות שלוש שנים מהפעם האחרונה שבה הפצנו את הגרסה הזו.</p>
-
-    <h2 id="demo">סרטוני ההדגמה</h2>
-    <p>מצב ההדגמה של TeleV, חשבון לדוגמה שמשמש לבדיקת האפליקציה בחנות ולא מתחבר לטלגרם, מנגן את הסרטים הפתוחים הבאים של קרן Blender:</p>
-    <ul dir="ltr">
-      <li><em>Big Buck Bunny</em>, © 2008 Blender Foundation, <a href="https://peach.blender.org/">peach.blender.org</a>, licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</li>
-      <li><em>Elephants Dream</em>, © 2006 Blender Foundation / Netherlands Media Art Institute, <a href="https://orange.blender.org/">orange.blender.org</a>, licensed under <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a>.</li>
-      <li><em>Sintel</em>, © 2010 Blender Foundation, <a href="https://durian.blender.org/">durian.blender.org</a>, licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</li>
-    </ul>
-    <p>הסרטונים מוזרמים ללא שינוי מהשרתים של קרן Blender ושל Internet Archive.</p>
+    <h2 id="media">מדיה</h2>
+    <p>תוכן ההדגמה: <em dir="ltr">Big Buck Bunny</em> (© 2008 Blender Foundation, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), <em dir="ltr">Elephants Dream</em> (© 2006 Blender Foundation, <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a>), <em dir="ltr">Sintel</em> (© 2010 Blender Foundation, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>).</p>
 
     <h2 id="trademarks">סימנים מסחריים</h2>
-    <p>Telegram הוא סימן מסחרי של Telegram FZ-LLC. Android, Android TV, Google TV ו-Google Play הם סימנים מסחריים של Google LLC. שמות אחרים עשויים להיות סימנים מסחריים של בעליהם. השימוש בהם כאן אינו מעיד על תמיכה או אישור.</p>
+    <p>Telegram הוא סימן מסחרי של Telegram FZ-LLC. Android, Android TV, Google TV ו-Google Play הם סימנים מסחריים של Google LLC.</p>
   </main>
 
   <footer class="site-footer">
