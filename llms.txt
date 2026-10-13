@@ -20,6 +20,7 @@ Key facts:
 
 - [How to watch Telegram on TV](https://telev.app/guide/watch-telegram-on-tv/): step-by-step installation and sign-in on Android TV and Google TV
 - [How to watch Telegram live streams on TV](https://telev.app/guide/telegram-live-streams-on-tv/): watching live broadcasts and video chats
+- [How to cast or mirror Telegram to a TV](https://telev.app/guide/cast-telegram-to-tv/): screen mirroring, Telegram Web, HDMI and a native app compared
 - [Which TVs can run Telegram](https://telev.app/devices/): supported and unsupported devices
 
 ## Legal
