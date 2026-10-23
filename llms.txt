@@ -11,7 +11,7 @@ Key facts:
 - Sign-in: scan a QR code with the Telegram phone app (Settings → Devices → Link Desktop Device), or use a phone number. Two-step verification is supported.
 - Features: video playback from channels, groups and chats; live streams and video chats in real time with switching between active streams; continue watching; playback speed; favorite channels; search public channels; archived chats.
 - Viewer only: TeleV can't send messages and never uses the microphone or camera.
-- Privacy: TeleV connects the TV directly to Telegram; it has no analytics or ads and doesn't collect personal data.
+- Privacy: TeleV connects the TV directly to Telegram; it has no analytics or ads; it sends only crash and diagnostic reports, without Telegram content, (Firebase Crashlytics) to help fix problems.
 - Languages: English and Hebrew; more languages are planned.
 - Support: support@telev.app
 - Updates channel on Telegram: https://t.me/telev (@telev)
