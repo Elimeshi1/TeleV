@@ -74,11 +74,17 @@
       ],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "Video player",
-      "operatingSystem": "Android TV, Google TV (Android 8.0 or newer)",
-      "softwareVersion": "1.0.26",
+      "operatingSystem": "Android TV, Google TV, Android phones and tablets (Android 8.0 or newer)",
+      "softwareVersion": "1.1.2",
       "inLanguage": [
         "en",
-        "he"
+        "he",
+        "es",
+        "ru",
+        "id",
+        "pt",
+        "fr",
+        "ar"
       ],
       "featureList": [
         "Sign in with a QR code or phone number",
@@ -87,10 +93,15 @@
         "Switch between live streams with the remote",
         "Continue watching where you left off",
         "Adjustable playback speed",
+        "Choose audio and subtitle tracks, with adjustable subtitle size",
         "Favorite channels",
         "Search public channels",
         "Archived chats",
-        "Full D-pad remote navigation"
+        "Full D-pad remote navigation",
+        "MTProto and SOCKS5 proxy support",
+        "Phone and tablet app with Continue on TV",
+        "Offline video downloads on phones",
+        "Picture-in-picture on phones"
       ],
       "installUrl": "https://play.google.com/store/apps/details?id=com.telev.tv",
       "downloadUrl": "https://play.google.com/store/apps/details?id=com.telev.tv",
@@ -187,7 +198,23 @@
           "name": "What languages does TeleV support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "TeleV is currently available in English and Hebrew. More languages are on the way."
+            "text": "TeleV is available in English, Hebrew, Spanish, Russian, Indonesian, Portuguese, French and Arabic. You can change the language in the app's settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does TeleV work on Android phones and tablets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The same TeleV app installs on Android phones and tablets with a touch interface. You can download videos to watch offline, keep watching in picture-in-picture, and tap Continue on TV to send a video or live stream to TeleV on your TV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Telegram is blocked on my network. Can I use a proxy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. TeleV supports MTProto and SOCKS5 proxies, like Telegram's own apps. Tap the shield button on the sign-in screen, or open Proxy in the settings, and add a proxy or paste a t.me/proxy link."
           }
         }
       ]
@@ -225,7 +252,7 @@
         </a>
         <a class="btn btn-ghost" href="/guide/watch-telegram-on-tv/">How it works</a>
       </div>
-      <p class="note">Free · Android TV &amp; Google TV · Android 8.0+</p>
+      <p class="note">Free · Android TV &amp; Google TV · Also on phones and tablets · Android 8.0+</p>
       <img class="hero-shot" fetchpriority="high" src="/assets/img/dashboard.webp" width="1280" height="720"
            alt="TeleV home screen on a TV, showing Telegram channels as rows of video cards with a live stream">
     </div>
@@ -253,7 +280,7 @@
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></div>
             <h3>Sign in from the couch</h3>
-            <p>Scan a QR code with Telegram on your phone, or use your phone number. Two-step verification is supported.</p>
+            <p>Scan a QR code with Telegram on your phone, or use your phone number. Two-step verification is supported, and so are MTProto and SOCKS5 proxies.</p>
           </div>
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></div>
@@ -263,12 +290,12 @@
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M10 8l5 3-5 3z"/></svg></div>
             <h3>Smooth video playback</h3>
-            <p>Videos stream straight from Telegram with smart caching, so even very large files play without filling your TV's storage.</p>
+            <p>Videos stream straight from Telegram with smart caching, so even very large files play without filling your TV's storage. Pick the audio and subtitle track and set the subtitle size.</p>
           </div>
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></div>
             <h3>Continue watching</h3>
-            <p>Pick up any video right where you left off. Adjust playback speed when you want to go faster.</p>
+            <p>Pick up any video right where you left off, with the audio and subtitles you chose. Adjust playback speed when you want to go faster.</p>
           </div>
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
@@ -279,6 +306,33 @@
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
             <h3>Search &amp; archive</h3>
             <p>Find public channels and browse their video history. Archived chats get a screen of their own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="phone">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>On your phone too, and one tap to the TV</h2>
+          <p>The same app installs on Android phones and tablets, with a touch interface of its own.</p>
+        </div>
+        <div class="features">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="15" height="11" rx="2"/><rect x="15" y="9" width="7" height="12" rx="1.5"/><path d="M6 18h6"/></svg></div>
+            <h3>Continue on TV</h3>
+            <p>Watching on the phone? Tap Continue on TV and TeleV on your TV takes over from the same second, live streams included. Same Wi-Fi and Telegram account.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div>
+            <h3>Download for offline</h3>
+            <p>Save videos to the phone and watch them without a connection. Downloads keep going in the background and resume after a restart.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><rect x="12" y="11" width="7" height="6" rx="1"/></svg></div>
+            <h3>Picture in picture</h3>
+            <p>Leave the app and the video or live stream keeps playing in a floating window, with controls on the lock screen and in notifications.</p>
           </div>
         </div>
       </div>
@@ -374,7 +428,15 @@
           </details>
           <details>
             <summary>What languages does TeleV support?</summary>
-            <p>TeleV is currently available in English and Hebrew. More languages are on the way.</p>
+            <p>TeleV is available in English, Hebrew, Spanish, Russian, Indonesian, Portuguese, French and Arabic. You can change the language in the app's settings.</p>
+          </details>
+          <details>
+            <summary>Does TeleV work on Android phones and tablets?</summary>
+            <p>Yes. The same TeleV app installs on Android phones and tablets with a touch interface. You can download videos to watch offline, keep watching in picture-in-picture, and tap Continue on TV to send a video or live stream to TeleV on your TV.</p>
+          </details>
+          <details>
+            <summary>Telegram is blocked on my network. Can I use a proxy?</summary>
+            <p>Yes. TeleV supports MTProto and SOCKS5 proxies, like Telegram's own apps. Tap the shield button on the sign-in screen, or open Proxy in the settings, and add a proxy or paste a t.me/proxy link.</p>
           </details>
         </div>
       </div>
@@ -384,7 +446,7 @@
       <div class="wrap">
         <div class="band">
           <h2>Your Telegram channels deserve a bigger screen</h2>
-          <p>Free on Google Play for Android TV and Google TV.</p>
+          <p>Free on Google Play for Android TV and Google TV, and for Android phones and tablets.</p>
           <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.telev.tv">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"/></svg>
             Get it on Google Play

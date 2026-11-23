@@ -4,15 +4,17 @@
 
 Key facts:
 
-- Platform: Android TV and Google TV, Android 8.0 or newer. Available on Google Play: https://play.google.com/store/apps/details?id=com.telev.tv
+- Platform: Android TV and Google TV, Android 8.0 or newer. The same app also installs on Android phones and tablets, with a touch interface. Available on Google Play: https://play.google.com/store/apps/details?id=com.telev.tv
+- Current version: 1.1.2
 - Price: free.
 - Supported devices: Chromecast with Google TV, Google TV Streamer, Nvidia Shield TV, Xiaomi Mi Box, and Sony, TCL, Hisense and Philips Android TV / Google TV smart TVs.
 - Not supported: Samsung (Tizen), LG (webOS), Amazon Fire TV, Roku, Apple TV. On those TVs, a Chromecast with Google TV adds TeleV.
 - Sign-in: scan a QR code with the Telegram phone app (Settings → Devices → Link Desktop Device), or use a phone number. Two-step verification is supported.
-- Features: video playback from channels, groups and chats; live streams and video chats in real time with switching between active streams; continue watching; playback speed; favorite channels; search public channels; archived chats.
+- Features: video playback from channels, groups and chats; live streams and video chats in real time with switching between active streams; continue watching (remembers the audio and subtitle tracks); playback speed; audio and subtitle track selection with adjustable subtitle size; favorite channels; search public channels; archived chats; MTProto and SOCKS5 proxies for networks that block Telegram.
+- Phone and tablet features: "Continue on TV" hands the current video or live stream to TeleV on a TV on the same network and Telegram account, from the same position; offline video downloads; picture-in-picture; lock-screen and notification media controls.
 - Viewer only: TeleV can't send messages and never uses the microphone or camera.
-- Privacy: TeleV connects the TV directly to Telegram; it has no analytics or ads; it sends only crash and diagnostic reports, without Telegram content, (Firebase Crashlytics) to help fix problems.
-- Languages: English and Hebrew; more languages are planned.
+- Privacy: TeleV connects the device directly to Telegram; it has no analytics or ads; it sends only crash and diagnostic reports, without Telegram content, (Firebase Crashlytics) to help fix problems.
+- Languages: English, Hebrew, Spanish, Russian, Indonesian, Portuguese, French and Arabic.
 - Support: support@telev.app
 - Updates channel on Telegram: https://t.me/telev (@telev)
 
