@@ -85,8 +85,8 @@ a:hover { color: #7cc9ff; }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary { background: #0072c9; color: #fff; box-shadow: 0 8px 30px rgba(5, 151, 251, .35); }
 .btn-primary:hover { background: #0066b8; color: #fff; }
-.btn-play { background: #000; color: #fff; border: 1px solid #5f6368; }
-.btn-play:hover { background: #1a1a1a; color: #fff; }
+.btn-play { background: #000; color: #fff; border: 2px solid #a6a6a6; padding: 12px 22px; box-shadow: 0 6px 24px rgba(0, 0, 0, .45); }
+.btn-play:hover { background: #1a1a1a; color: #fff; border-color: #fff; }
 .btn-ghost { border: 1px solid var(--border); color: var(--text); }
 .btn-ghost:hover { background: var(--surface); color: var(--text); }
 .btn svg { width: 22px; height: 22px; flex: none; }
