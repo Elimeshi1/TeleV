@@ -13,7 +13,7 @@ Key facts:
 - Features: video playback from channels, groups and chats; live streams and video chats in real time with switching between active streams; continue watching (remembers the audio and subtitle tracks); playback speed; audio and subtitle track selection with adjustable subtitle size; favorite channels; search public channels; archived chats; MTProto and SOCKS5 proxies for networks that block Telegram.
 - Phone and tablet features: "Continue on TV" hands the current video or live stream to TeleV on a TV on the same network and Telegram account, from the same position; offline video downloads; picture-in-picture; lock-screen and notification media controls.
 - Viewer only: TeleV can't send messages and never uses the microphone or camera.
-- Privacy: TeleV connects the device directly to Telegram; it has no analytics or ads; it sends only crash and diagnostic reports, without Telegram content, (Firebase Crashlytics) to help fix problems.
+- Privacy: TeleV connects the device directly to Telegram; it has no ads and collects no advertising ID; it sends crash and diagnostic reports (Firebase Crashlytics) and anonymous usage statistics (Google Analytics for Firebase), without Telegram content or search text, to fix problems and improve the app.
 - Languages: English, Hebrew, Spanish, Russian, Indonesian, Portuguese, French and Arabic.
 - Support: support@telev.app
 - Updates channel on Telegram: https://t.me/telev (@telev)
